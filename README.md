@@ -21,6 +21,24 @@ Na raiz do projeto ficam apenas os arquivos principais:
 - `README.md`: visão geral do projeto
 - `.gitignore`: regras para ignorar arquivos temporários e auxiliares
 
+## Visão rápida da base
+
+| Indicador | Valor |
+|---|---:|
+| Registros originais | 253.680 |
+| Duplicatas removidas | 23.899 |
+| Registros após limpeza | 229.781 |
+| Sem diabetes | 82,71% |
+| Pré-diabetes | 2,01% |
+| Diabetes | 15,27% |
+
+```mermaid
+pie title Distribuição dos grupos após a limpeza
+    "Sem diabetes" : 82.71
+    "Pré-diabetes" : 2.01
+    "Diabetes" : 15.27
+```
+
 ## Sobre a análise
 
 O notebook realiza:
@@ -35,13 +53,31 @@ O notebook realiza:
 - normalização Min-Max do IMC
 - visualizações para apoiar as hipóteses
 
-## Principais resultados
+## Destaques da análise
 
-- Pressão alta e colesterol alto apareceram com associação clara ao diabetes
-- O IMC médio cresce conforme o grupo avança de sem diabetes para diabetes
-- A prática de atividade física é menor nos grupos com diabetes
-- Faixas mais baixas de renda e escolaridade apresentaram percentuais maiores de diabetes
-- A hipótese de que homens de baixa renda teriam mais diabetes não se confirmou na menor faixa de renda
+| Hipótese | Resultado principal | Leitura final |
+|---|---|---|
+| Fatores de risco | Pressão alta: 6,93% → 25,29% | Confirmada |
+| Fatores de risco | Colesterol alto: 9,04% → 23,15% | Confirmada |
+| IMC e atividade física | IMC médio cresce de 28,03 para 31,96 | Confirmada |
+| Renda e educação | Menor renda: 24,34% / Maior renda: 9,81% | Confirmada como tendência geral |
+| Sexo e renda | Na menor renda, feminino 25,84% e masculino 21,18% | Não confirmada na forma proposta |
+
+```mermaid
+xychart-beta
+    title "Percentual de diabetes com e sem fatores de risco"
+    x-axis ["HighBP sem", "HighBP com", "HighChol sem", "HighChol com"]
+    y-axis "Percentual" 0 --> 30
+    bar [6.93, 25.29, 9.04, 23.15]
+```
+
+## Principais interpretações
+
+- Pressão alta e colesterol alto apareceram com associação clara ao diabetes.
+- O IMC médio cresce conforme o grupo avança de sem diabetes para diabetes.
+- A prática de atividade física é menor nos grupos com diabetes.
+- Faixas mais baixas de renda e escolaridade apresentaram percentuais maiores de diabetes.
+- A hipótese de que homens de baixa renda teriam mais diabetes não se confirmou na menor faixa de renda.
 
 ## Como abrir
 
