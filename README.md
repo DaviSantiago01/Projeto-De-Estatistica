@@ -69,7 +69,7 @@ O notebook segue uma sequência lógica de preparação e análise:
 | Fatores de risco | Pressão alta: 6,93% → 25,29% | Confirmada |
 | Fatores de risco | Colesterol alto: 9,04% → 23,15% | Confirmada |
 | IMC e atividade física | IMC médio cresce de 28,03 para 31,96 | Confirmada |
-| Renda e educação | Menor renda: 24,34% / Maior renda: 9,81% | Confirmada como tendência geral |
+| Renda e educação | Menor renda: 24,34% / Maior renda: 9,81% no total | Confirmada |
 | Sexo e renda | Na menor renda, feminino 25,84% e masculino 21,18% | Não confirmada na forma proposta |
 
 ## Síntese das análises
