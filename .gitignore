@@ -39,3 +39,6 @@ desktop.ini
 
 # Arquivos auxiliares fora da estrutura principal
 arquivos_auxiliares/
+
+# Prompt local para montagem dos slides
+arquivos_auxiliares/prompt_gamma_app.md
