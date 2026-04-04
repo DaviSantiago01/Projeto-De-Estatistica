@@ -15,9 +15,10 @@ Ao longo da análise, o notebook busca responder quatro perguntas principais:
 
 ## Estrutura principal
 
-Na raiz do projeto ficam apenas os arquivos principais:
+Na raiz do projeto ficam os arquivos principais da entrega:
 
 - `PROJETO_ESTATISTICA.ipynb`: notebook principal da análise
+- `diabetes_012_health_indicators_BRFSS2015.csv`: base de dados usada no notebook
 - `README.md`: visão geral do projeto
 - `.gitignore`: regras para ignorar arquivos temporários e auxiliares
 
@@ -31,13 +32,6 @@ Na raiz do projeto ficam apenas os arquivos principais:
 | Sem diabetes | 82,71% |
 | Pré-diabetes | 2,01% |
 | Diabetes | 15,27% |
-
-```mermaid
-pie title Distribuição dos grupos após a limpeza
-    "Sem diabetes" : 82.71
-    "Pré-diabetes" : 2.01
-    "Diabetes" : 15.27
-```
 
 ## Sobre a análise
 
@@ -63,14 +57,6 @@ O notebook realiza:
 | Renda e educação | Menor renda: 24,34% / Maior renda: 9,81% | Confirmada como tendência geral |
 | Sexo e renda | Na menor renda, feminino 25,84% e masculino 21,18% | Não confirmada na forma proposta |
 
-```mermaid
-xychart-beta
-    title "Percentual de diabetes com e sem fatores de risco"
-    x-axis ["HighBP sem", "HighBP com", "HighChol sem", "HighChol com"]
-    y-axis "Percentual" 0 --> 30
-    bar [6.93, 25.29, 9.04, 23.15]
-```
-
 ## Principais interpretações
 
 - Pressão alta e colesterol alto apareceram com associação clara ao diabetes.
@@ -81,7 +67,7 @@ xychart-beta
 
 ## Como abrir
 
-Abra o arquivo `PROJETO_ESTATISTICA.ipynb` no Jupyter Notebook, JupyterLab ou Google Colab e execute as células em ordem.
+Abra o arquivo `PROJETO_ESTATISTICA.ipynb` no Jupyter Notebook, JupyterLab ou Google Colab e execute as células em ordem. O notebook foi organizado para ler automaticamente o arquivo `diabetes_012_health_indicators_BRFSS2015.csv` a partir da raiz do projeto.
 
 ## Observação
 
